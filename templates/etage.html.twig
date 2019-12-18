@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <section class="etage_main-image">
+        <a class="sapin" href="{{ path('sapin') }}">Sapin</a>
+        <a class="loupe"href="{{ path('loupe') }}">Loupe</a>
+        <a class="crochet" href="{{ path('crochet') }}">Crochet</a>
+    </section>
+    <section class="bottom-menu">
+        <p class="search-info-paragraph">Pas de Perce-Oreille ici... Mais peut-être un indice ?</p>
+        <a class="to-lobby" href="{{ path('entree') }}" title="Vers l'entrée">Revenir à l'entrée</a>
+    </section>
+{% endblock %}
