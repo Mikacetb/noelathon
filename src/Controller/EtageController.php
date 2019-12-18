@@ -13,10 +13,34 @@ use Symfony\Component\Routing\Annotation\Route;
 class EtageController extends AbstractController
 {
     /**
-     * @Route("/etage", name="étage", methods={"GET"})
+     * @Route("/etage", name="etage", methods={"GET"})
      */
     public function index(): Response
     {
         return $this->render('etage.html.twig');
+    }
+
+    /**
+     * @Route("/sapin", name="sapin", methods={"GET"})
+     */
+    public function sapin(): Response
+    {
+        return $this->render('sapin.html.twig');
+    }
+
+    /**
+     * @Route("/crochet", name="crochet", methods={"GET"})
+     */
+    public function crochet(): Response
+    {
+        return $this->render('crochet.html.twig');
+    }
+
+    /**
+     * @Route("/loupe", name="loupe", methods={"GET"})
+     */
+    public function loupe(): Response
+    {
+        return $this->render('loupe.html.twig');
     }
 }
