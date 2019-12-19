@@ -7,13 +7,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("/entree")
- */
 class EtageController extends AbstractController
 {
     /**
-     * @Route("/etage", name="etage", methods={"GET"})
+     * @Route("game/etage", name="game_etage", methods={"GET"})
      */
     public function index(): Response
     {
@@ -21,7 +18,7 @@ class EtageController extends AbstractController
     }
 
     /**
-     * @Route("/sapin", name="sapin", methods={"GET"})
+     * @Route("game/sapin", name="game_sapin", methods={"GET"})
      */
     public function sapin(): Response
     {
@@ -29,7 +26,7 @@ class EtageController extends AbstractController
     }
 
     /**
-     * @Route("/crochet", name="crochet", methods={"GET"})
+     * @Route("game/crochet", name="game_crochet", methods={"GET"})
      */
     public function crochet(): Response
     {
@@ -37,7 +34,7 @@ class EtageController extends AbstractController
     }
 
     /**
-     * @Route("/loupe", name="loupe", methods={"GET"})
+     * @Route("game/loupe", name="game_loupe", methods={"GET"})
      */
     public function loupe(): Response
     {

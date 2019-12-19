@@ -7,13 +7,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("/entree")
- */
 class EntreeController extends AbstractController
 {
     /**
-     * @Route("/", name="entree", methods={"GET"})
+     * @Route("game/palier", name="game_palier", methods={"GET"})
      */
     public function index(): Response
     {
